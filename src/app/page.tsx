@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -14,8 +15,18 @@ export default function HomePage() {
       <main className="flex-1">
 
         {/* Hero */}
-        <section className="bg-[#0A1628] text-white py-24 px-6">
-          <div className="max-w-4xl mx-auto">
+        <section className="relative bg-[#0A1628] text-white py-24 px-6 overflow-hidden">
+          {/* Dallas skyline background */}
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="https://images.unsplash.com/photo-1625950019503-cae6a7825762?w=1920&q=80&fit=crop&auto=format"
+              alt="Dallas skyline at night"
+              fill
+              className="object-cover object-center opacity-25"
+              priority
+            />
+          </div>
+          <div className="relative z-10 max-w-4xl mx-auto">
             <p className="text-[#C17D3C] text-xs font-semibold uppercase tracking-widest mb-4">
               North Texas · Third Thursday Monthly
             </p>
@@ -38,6 +49,7 @@ export default function HomePage() {
           </div>
         </section>
 
+
         {/* Stats bar */}
         <section className="bg-[#C17D3C] text-white py-5 px-6">
           <div className="max-w-4xl mx-auto flex flex-wrap gap-8 justify-center md:justify-between text-sm font-medium">
@@ -50,7 +62,7 @@ export default function HomePage() {
 
         {/* What is DAS */}
         <section className="py-20 px-6">
-          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-start">
             <div>
               <p className="text-[#C17D3C] text-xs font-semibold uppercase tracking-widest mb-3">
                 About the Society
@@ -77,7 +89,17 @@ export default function HomePage() {
                 Learn more about DAS →
               </Link>
             </div>
-            <div className="bg-[#0A1628] rounded-xl p-8 text-white">
+            <div className="space-y-6">
+              {/* Dallas city photo */}
+              <div className="relative rounded-xl overflow-hidden h-48">
+                <Image
+                  src="https://images.unsplash.com/photo-1611693727459-814df5250d9b?w=800&q=80&fit=crop&auto=format"
+                  alt="Margaret Hunt Hill Bridge, Dallas Texas"
+                  fill
+                  className="object-cover object-center"
+                />
+              </div>
+              <div className="bg-[#0A1628] rounded-xl p-8 text-white">
               <p
                 className="text-lg font-semibold mb-6"
                 style={{ fontFamily: "'Playfair Display', serif" }}
@@ -101,6 +123,7 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
+            </div>
             </div>
           </div>
         </section>
