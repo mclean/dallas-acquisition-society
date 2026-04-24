@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0A1628;
+  --copper: #C17D3C;
+  --copper-light: #D4913E;
+  --offwhite: #F8F6F2;
+  --charcoal: #1C1C1E;
+  --border: #E5E2DC;
+  --muted: #6B6B6B;
+}
+
+html {
+  background-color: #F8F6F2;
+  color: #1C1C1E;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #F8F6F2;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
