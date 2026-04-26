@@ -41,9 +41,9 @@ export default function AboutPage() {
               </h2>
               <p className="text-[#1C1C1E] leading-relaxed mb-4">
                 The lower middle market acquisition world is surprisingly tight-knit nationally,
-                but locally fragmented. Houston has ETA Circle. Charlotte and Atlanta have their groups.
-                Dallas — the third-largest metro in Texas and one of the most active M&A markets
-                in the country — had nothing.
+                but locally fragmented. Dallas is the third-largest metro in Texas and one of the
+                most active M&A markets in the country, yet there was no dedicated community for
+                the people actually doing deals here.
               </p>
               <p className="text-[#1C1C1E] leading-relaxed mb-4">
                 The Dallas Acquisition Society was created to change that. Monthly in-person gatherings

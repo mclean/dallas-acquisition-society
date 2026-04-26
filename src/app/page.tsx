@@ -74,8 +74,8 @@ export default function HomePage() {
                 Dallas needed this. Now it exists.
               </h2>
               <p className="text-[#6B6B6B] leading-relaxed mb-4">
-                Houston has ETA Circle. Charlotte has their group. Atlanta launched theirs this year.
-                Dallas — the third-largest metro in Texas and a major M&A market — had nothing.
+                Dallas is the third-largest metro in Texas and a major M&A market. Yet there was
+                no dedicated community for the people actually buying businesses here. Now there is.
               </p>
               <p className="text-[#6B6B6B] leading-relaxed mb-6">
                 DAS fills that gap. Monthly in-person events where people who buy businesses share
