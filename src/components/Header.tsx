@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/events", label: "Events" },
@@ -17,21 +18,15 @@ export default function Header() {
     <header className="bg-[#0A1628] text-white">
       <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="flex flex-col leading-none">
-            <span
-              className="text-[#C17D3C] font-bold tracking-widest text-xs uppercase"
-              style={{ fontFamily: "Inter, sans-serif" }}
-            >
-              Dallas
-            </span>
-            <span
-              className="text-white font-bold text-lg tracking-wide"
-              style={{ fontFamily: "'Playfair Display', serif" }}
-            >
-              Acquisition Society
-            </span>
-          </div>
+        <Link href="/" className="flex items-center group">
+          <Image
+            src="/das-logo.png"
+            alt="Dallas Acquisition Society"
+            width={160}
+            height={56}
+            className="h-10 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}

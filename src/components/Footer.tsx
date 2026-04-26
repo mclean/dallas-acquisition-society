@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,12 +8,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
           {/* Brand */}
           <div className="md:col-span-2">
-            <p
-              className="text-white font-bold text-lg mb-2"
-              style={{ fontFamily: "'Playfair Display', serif" }}
-            >
-              Dallas Acquisition Society
-            </p>
+            <Image
+              src="/das-logo.png"
+              alt="Dallas Acquisition Society"
+              width={140}
+              height={49}
+              className="h-9 w-auto mb-2"
+            />
             <p className="text-sm leading-relaxed max-w-xs">
               North Texas&apos;s community for lower middle market acquisition entrepreneurs,
               independent sponsors, and the professionals who support them.
